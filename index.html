@@ -1,12 +1,176 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+<html lang=ru>
+    <head>
+        <meta charset="UTF-8">
+        <link href="" rel="stylesheet">
+        <title>Sedona</title>
+    </head>
+    <body>
+        
+    <div class="wrapper">   
+        
+        <header class="page-header">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" title="Узнать информацию">Информация</a></li>
+                    <li><a href="#" title="Перейти в раздел Фото и видео">Фото и видео</a></li>
+                    <li><a href="#" title="Окрыть карту">Карта штата</a></li>
+                    <li><a href="#" title="Выбрать гостиницу">Гостиницы</a></li>
+                </ul>
+                <div class="logo">
+                    <img src="" width="" height="" alt="Логотип">                
+                </div>
+            </nav>            
+        </header>
+        
+        <main>
+                
+            <section class="promo">
+                
+                <!---- На фоне блока будет картинка с угловатыми элементами (вырежу из фотошопа). 
+                                                                                                 
+                       Я так понял что и подписи все титульные обернуть в блок с картинкой .promo-img (также вырежу из фотошопа)---->
+                
+                <div class="promo-img">
+                    <img src="" width="" height="" alt="Добро пожаловать в Седону">                
+                </div>                
+                
+            </section>
+            
+            
+            <section class="features">
+                
+                <div class="feature-header">
+                    <h2 class="feature-title">Седона - небольшой городок в аризоне, заслуживающий большего!</h2><br>
+                    <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+                </div>    
+                
+                <div class="feature-row">
+                    <div class="feature-column">
+                        <h2 class="feature-title">Настоящий <br> городок</h2>
+                        <span>&mdash; №1 &mdash;</span>
+                        <p>Седона не атракцион для туристов, там течет своя жизнь</p>
+                    </div>
+                    <figure class="feature-picture">                        
+                        <img src="" width="" height="" alt="Фото Гостиницы">                 
+                    </figure>
+                </div>
+                
+                <!--- !!!!Картинки псевдоэлементами у .feature-list-item!!!! --->
+                
+                <div class="feature-list">
+                    <div class="feature-list-item">
+                        <h2 class="feature-title">Жилье</h2>
+                        <p>Рекомендуем пожить в настоящем мотеле, все как в  кино!</p>
+                    </div>                    
+                    <div class="feature-list-item">
+                        <h2 class="feature-title">Еда</h2>
+                        <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+                    </div>
+                    <div class="feature-list-item">
+                        <h2 class="feature-title">Сувениры</h2>
+                        <p>Не только китайского, но и местного производства!</p>
+                    </div>
+                </div>
+                
+                <div class="feature-row">                    
+                    <figure class="feature-picture">                        
+                        <img src="" width="" height="" alt="Фото Каньона">                 
+                    </figure>
+                    <div class="feature-column">
+                        <h2 class="feature-title">Там есть <br> мост <br> дьявола</h2>
+                        <span>&mdash; №2 &mdash;</span>
+                        <p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                    </div>
+                </div>
+                
+                <div class="feature-row">
+                    <div class="feature-item">
+                        <h2 class="feature-title">Небольшая площаль</h2>
+                        <span>&mdash; №3 &mdash;</span>
+                        <p>Все достопримечательности находятся очень близко</p>
+                    </div>
+                    <div class="feature-item">
+                        <h2 class="feature-title">Красивая дорога</h2>
+                        <span>&mdash; №4 &mdash;</span>
+                        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                    </div>
+                    <div class="feature-item">
+                        <h2 class="feature-title">Мало туристов</h2>
+                        <span>&mdash; №5 &mdash;</span>
+                        <p>Большинство едет в Гранд Каньон и толпятся там</p>
+                    </div>                                    
+                </div>
+                     
+            </section>
+            
+            <section class="hotel-search">
+                
+                <div class="hotel-search-wrap">
+                    <h2 class="hotel-search-title">Заинтересовались?</h2>
+                    <p>Укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+                    <a href="#" class="hotel-search-btn" title="Найти гостиницу">Поиск гостиницы в Седоне</a>
+                </div>
+                
+                <div class="map">
+                    
+                       <!--- Здесь будет ссылка на карту  ---->                     
+                    
+                    <div class="hotel-search-form">
+                        <form action="" method="post">
+                            <p class="hotel-form-row">
+                                <label for="check-in">Дата заезда:</label>
+                                <input type="text" id="check-in" name="check-in" placeholder="24 апреля 2017" class="input-calendar">
+                            </p>
+                            
+                            <p class="hotel-form-row">
+                                <label for="check-out">Дата выезда:</label>
+                                <input type="text" id="check-out" name="check-out" placeholder="4 июля 2017" class="input-calendar">
+                            </p>                            
+                            
+                            <p class="form-group-select">
+                                <label for="adult">Взрослые:</label>                                     
+                                <button type="button" class="btn-setting btn-minus"></button>
+                                <input type="text" id="adult" class="form-group-select">
+                                <button type="button" class="btn-setting btn-plus"></button>                                                                 
+                            </p>
+                                
+                            <p class="form-group-select">
+                                <label for="children">Взрослые:</label>                                     
+                                <button type="button" class="btn-setting btn-minus"></button>
+                                <input type="text" id="children" name="children" class="form-group-select">
+                                <button type="button" class="btn-setting btn-plus"></button>                                                                 
+                            </p>
+                            
+                            <button class="btn-form-search" type="submit">Найти</button>                            
+                        </form>
+                    </div>
+                </div>
+            </section>                       
+                        
+         </main>
+        
+        <!----- Футер абсолютом залезет на блок с картой  ----->
+        
+         <footer class="page-footer">
+             
+             <span class="link-sedona">                 
+                 <a href="" title="" >#visitsedona</a>
+             </span>
+             
+             <ul class="social-network">
+                 <li><a href="#" class="social-btn icon-twitter" title="Twitter">Twitter</a></li>
+				 <li><a href="#" class="social-btn icon-facebook" title="Facebook">Facebook</a></li>
+				 <li><a href="#" class="social-btn icon-youtube" title="Youtube">Youtube</a></li>                           
+             </ul>
+                            
+             <span class="copyright">
+                 <a href="https://htmlacademy.ru/" title="htmlacademy">website by</a>                            
+             </span>
+             
+        </footer>      
+    
+    </div>     
+        
+    </body>
 </html>
