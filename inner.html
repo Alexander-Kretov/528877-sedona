@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang=ru>
+    <head>
+        <meta charset="UTF-8">
+        <link href="" rel="stylesheet">
+        <title>Hotel Sedona</title>
+    </head>
+    <body>
+        
+    <div class="wrapper">   
+        
+        <header class="page-header">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" title="Узнать информацию">Информация</a></li>
+                    <li><a href="#" title="Перейти в раздел Фото и видео">Фото и видео</a></li>
+                    <li><a href="#" title="Окрыть карту">Карта штата</a></li>
+                    <li><a href="#" title="Выбрать гостиницу">Гостиницы</a></li>
+                </ul>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="" width="" height="" alt="Логотип">                        
+                    </a>    
+                </div>
+            </nav>            
+        </header>
+        
+        <section class="filter-form">
+            <form action="" method="get" class="hotel-filter-form">
+                <div class="filter-form-column">
+                    <p class="form-title">Инфраструктура:</p>
+                    <p class="form-checkbox">
+                        <input type="checkbox" id="swimming" name="swimming" checked value="checbox1">
+                        <label for="swimming">
+                            Бассейн
+                        </label>
+                    </p>
+                    <p class="form-checkbox">
+                        <input type="checkbox" id="parking" name="parking" value="checbox2">
+                        <label for="parking">
+                            Парковка
+                        </label>
+                    </p>
+                    <p class="form-checkbox">
+                        <input type="checkbox" id="wi-fi" name="wi-fi" value="checbox3">
+                        <label for="wi-fi">
+                            Wi-Fi
+                        </label>
+                    </p>
+                </div>
+                
+                <div class="filter-form-column">
+                    <p class="form-title">Тип жилья:</p>
+                    <p class="form-checkbox">
+                        <input type="checkbox" id="hotel" name="hotel"  value="checbox4" checked>
+                        <label for="hotel">
+                            Гостиница
+                        </label>
+                    </p>
+                    <p class="form-checkbox">
+                        <input type="checkbox" id="motel" name="motel" value="checbox5" checked>
+                        <label for="motel">
+                            Мотель
+                        </label>
+                    </p>
+                    <p class="form-checkbox">
+                        <input type="checkbox" id="apartments" name="apartments" value="checbox6" checked>
+                        <label for="apartments">
+                            Апартаменты
+                        </label>
+                    </p>
+                </div>
+                
+                <div class="range-form-column">
+                    <p class="form-title">Стоимость в сутки (Р):</p>
+                    <div class="price-control">
+                        <label for="min-price">От</label>
+                        <input type="text" id="min-price" name="min-price" value="0">
+                        <label for="max-price">До</label>
+                        <input type="text" id="max-price" name="max-price" value="3000">
+                    </div>
+                    <div class="range-control">
+                        <div class="scale">
+                            <div class="bar"></div>
+                        </div>
+                        <div class="range-toggle range-toggle-min"></div>
+                        <div class="range-toggle range-toggle-max"></div>
+                    </div>
+                    <button class="btn-form-filter" type="submit">Показать</button>
+                </div>
+                
+            </form>        
+        
+        </section>
+        
+        
+    </body>
+        
+    </div>
