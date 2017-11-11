@@ -2,7 +2,7 @@
 <html lang=ru>
     <head>
         <meta charset="UTF-8">
-        <link href="" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         <title>Sedona</title>
     </head>
     <body>
@@ -12,13 +12,13 @@
         <header class="page-header">
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#" title="">Информация</a></li>
-                    <li><a href="#" title="">Фото и видео</a></li>
-                    <li><a href="#" title="">Карта штата</a></li>
-                    <li><a href="inner.html" title="">Гостиницы</a></li>
+                    <li><a href="#" title="" tabindex="1">Информация</a></li>
+                    <li><a href="#" title="" tabindex="2">Фото и видео</a></li>
+                    <li><a href="#" title="" tabindex="4">Карта штата</a></li>
+                    <li><a href="inner.html" title="" tabindex="5">Гостиницы</a></li>
                 </ul>
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="index.html" tabindex="3">
                         <img src="img/logo.png" width="138" height="70" alt="Логотип">
                     </a>    
                 </div>
@@ -29,11 +29,9 @@
                 
             <section class="promo">
                 
-                <!--
-                       На фоне блока будет картинка с угловатыми элементами и титульными подписями (все единообразно вырезал из фотошопа). 
-                                                                                                 
-                        
-                -->
+                <div class="promo-img">
+                </div>
+                
                 
                                 
                 
@@ -43,7 +41,7 @@
             <section class="features">
                 
                 <div class="feature-header">
-                    <h2 class="feature-title">Седона - небольшой городок в аризоне, заслуживающий большего!</h2><br>
+                    <h2 class="feature-title">Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
                     <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
                 </div>    
                 
@@ -61,15 +59,15 @@
                 <!-- !!!!Картинки псевдоэлементами у .feature-list-item!!!! -->
                 
                 <div class="feature-list">
-                    <div class="feature-list-item">
+                    <div class="feature-list-item feature-icon feature-icon-home">
                         <h2 class="feature-title">Жилье</h2>
                         <p>Рекомендуем пожить в настоящем мотеле, все как в  кино!</p>
                     </div>                    
-                    <div class="feature-list-item">
+                    <div class="feature-list-item feature-icon feature-icon-burger">
                         <h2 class="feature-title">Еда</h2>
                         <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
                     </div>
-                    <div class="feature-list-item">
+                    <div class="feature-list-item feature-icon feature-icon-box">
                         <h2 class="feature-title">Сувениры</h2>
                         <p>Не только китайского, но и местного производства!</p>
                     </div>
@@ -111,7 +109,7 @@
                 <div class="hotel-search-wrap">
                     <h2 class="hotel-search-title">Заинтересовались?</h2>
                     <p>Укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-                    <a href="#" class="hotel-search-btn" title="Найти гостиницу">Поиск гостиницы в Седоне</a>
+                    <a href="#" class="hotel-search-btn" title="Найти гостиницу" tabindex="6">Поиск гостиницы в Седоне</a>
                 </div>
                 
                 <div class="map">
@@ -119,34 +117,37 @@
                        <!--  Здесь будет ссылка на карту  -->                     
                     
                     <div class="form-search">
-                        <form class="hotel-search-form" action="" method="post">
+                        <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
                             <p class="hotel-form-row">
-                                <label for="check-in">Дата заезда:</label>
+                                <label for="check-in" >Дата заезда:</label>
                                 <span class="icon-calendar"></span>
-                                <input type="text" id="check-in" name="check-in" placeholder="24 апреля 2017" class="input-calendar">
+                                <input type="text" id="check-in" name="check-in" placeholder="24 апреля 2017" class="input-calendar" tabindex="7">
                             </p>
                             
                             <p class="hotel-form-row">
-                                <label for="check-out">Дата выезда:</label>
+                                <label for="check-out" >Дата выезда:</label>
                                 <span class="icon-calendar"></span>
-                                <input type="text" id="check-out" name="check-out" placeholder="4 июля 2017" class="input-calendar">
+                                <input type="text" id="check-out" name="check-out" placeholder="4 июля 2017" class="input-calendar" tabindex="8">
                             </p>                            
                             
-                            <p class="form-group-select">
-                                <label for="adult">Взрослые:</label>                                     
-                                <button type="button" class="btn-setting btn-minus"></button>
-                                <input type="text" id="adult" class="form-group-select">
-                                <button type="button" class="btn-setting btn-plus"></button>                                                                 
-                            </p>
-                                
-                            <p class="form-group-select">
-                                <label for="children">Дети:</label>                                     
-                                <button type="button" class="btn-setting btn-minus"></button>
-                                <input type="text" id="children" name="children" class="form-group-select">
-                                <button type="button" class="btn-setting btn-plus"></button>                                                                 
-                            </p>
+                            <div class="form-select-row">
                             
-                            <button class="btn-form-search" type="submit">Найти</button>                            
+                                <p class="form-group-select">
+                                    <label for="adult"  >Взрослые:</label>                                     
+                                    <button type="button" class="btn-setting btn-minus" tabindex="9"></button>
+                                    <input type="text" id="adult" class="hotel-form-select" value="2" tabindex="10">
+                                    <button type="button" class="btn-setting btn-plus" tabindex="11"></button>                                                                 
+                                </p>
+                                
+                                <p class="form-group-select">
+                                    <label for="children" >Дети:</label>                                     
+                                    <button type="button" class="btn-setting btn-minus" tabindex="12"></button>
+                                    <input type="text" id="children" name="children" class="hotel-form-select" value="0" tabindex="13">
+                                    <button type="button" class="btn-setting btn-plus" tabindex="14"></button>                                                                 
+                                </p>
+                                
+                            </div>
+                            <button class="btn-form-search" type="submit" tabindex="15">Найти</button>                            
                         </form>
                     </div>
                 </div>
@@ -159,17 +160,17 @@
          <footer class="page-footer">
              
              <div class="link-sedona">                 
-                 <a href="" title="" >#visitsedona</a>
+                 <a href="" title="" tabindex="16">#visitsedona</a>
              </div>
              
              <ul class="social-network">
-                 <li><a href="#" class="social-btn icon-twitter" title="Twitter">Twitter</a></li>
-				 <li><a href="#" class="social-btn icon-facebook" title="Facebook">Facebook</a></li>
-				 <li><a href="#" class="social-btn icon-youtube" title="Youtube">Youtube</a></li>                           
+                 <li><a href="#" class="social-btn icon-twitter" title="Twitter" tabindex="17">Twitter</a></li>
+				 <li><a href="#" class="social-btn icon-facebook" title="Facebook" tabindex="18">Facebook</a></li>
+				 <li><a href="#" class="social-btn icon-youtube" title="Youtube" tabindex="19">Youtube</a></li>                           
              </ul>
                             
              <div class="copyright">
-                 <a href="https://htmlacademy.ru/intensive/htmlcss" title="htmlacademy">website by</a>                            
+                 <a href="https://htmlacademy.ru/intensive/htmlcss" title="htmlacademy" tabindex="20">website by</a>                            
              </div>
              
         </footer>      

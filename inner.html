@@ -12,38 +12,38 @@
         <header class="page-header">
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#" title="Узнать информацию">Информация</a></li>
-                    <li><a href="#" title="Перейти в раздел Фото и видео">Фото и видео</a></li>
-                    <li><a href="#" title="Окрыть карту">Карта штата</a></li>
-                    <li><a href="#" title="Выбрать гостиницу">Гостиницы</a></li>
+                    <li><a href="#" title="Узнать информацию" tabindex="1">Информация</a></li>
+                    <li><a href="#" title="Перейти в раздел Фото и видео" tabindex="2">Фото и видео</a></li>
+                    <li><a href="#" title="Окрыть карту" tabindex="4">Карта штата</a></li>
+                    <li><a href="#" title="Выбрать гостиницу" tabindex="5">Гостиницы</a></li>
                 </ul>
                 <div class="logo">
-                    <a href="index.html">
-                        <img src="img/logo.png" width="138" height="70" alt="Логотип">                        
+                    <a href="index.html" tabindex="3">
+                        <img src="img/logo.png" width="138" height="70" alt="Логотип" >                        
                     </a>    
                 </div>
             </nav>            
         </header>
         
         <section class="filter-form">
-            <form action="" method="get" class="hotel-filter-form">
+            <form action="https://echo.htmlacademy.ru" method="get" class="hotel-filter-form">
                 <div class="filter-form-column">
                     <h2 class="form-title">Инфраструктура:</h2>
                     <p class="form-checkbox">
-                        <input type="checkbox" id="swimming" name="swimming" checked value="checbox1">
-                        <label for="swimming">
+                        <input type="checkbox" id="swimming" name="swimming" checked value="checbox1" tabindex="7">
+                        <label for="swimming" tabindex="6">
                             Бассейн
                         </label>
                     </p>
                     <p class="form-checkbox">
-                        <input type="checkbox" id="parking" name="parking" value="checbox2">
-                        <label for="parking">
+                        <input type="checkbox" id="parking" name="parking" value="checbox2" tabindex="9">
+                        <label for="parking" tabindex="8">
                             Парковка
                         </label>
                     </p>
                     <p class="form-checkbox">
-                        <input type="checkbox" id="wi-fi" name="wi-fi" value="checbox3">
-                        <label for="wi-fi">
+                        <input type="checkbox" id="wi-fi" name="wi-fi" value="checbox3" tabindex="11">
+                        <label for="wi-fi" tabindex="10">
                             Wi-Fi
                         </label>
                     </p>
@@ -52,20 +52,20 @@
                 <div class="filter-form-column">
                     <h2 class="form-title">Тип жилья:</h2>
                     <p class="form-checkbox">
-                        <input type="checkbox" id="hotel" name="hotel"  value="checbox4" checked>
-                        <label for="hotel">
+                        <input type="checkbox" id="hotel" name="hotel"  value="checbox4" checked tabindex="13">
+                        <label for="hotel" tabindex="12">
                             Гостиница
                         </label>
                     </p>
                     <p class="form-checkbox">
-                        <input type="checkbox" id="motel" name="motel" value="checbox5" checked>
-                        <label for="motel">
+                        <input type="checkbox" id="motel" name="motel" value="checbox5" checked tabindex="15">
+                        <label for="motel" tabindex="14">
                             Мотель
                         </label>
                     </p>
                     <p class="form-checkbox">
-                        <input type="checkbox" id="apartments" name="apartments" value="checbox6" checked>
-                        <label for="apartments">
+                        <input type="checkbox" id="apartments" name="apartments" value="checbox6" checked tabindex="17">
+                        <label for="apartments" tabindex="16">
                             Апартаменты
                         </label>
                     </p>
@@ -75,9 +75,9 @@
                     <h2 class="form-title">Стоимость в сутки (Р):</h2>
                     <p class="price-control">
                         <label for="min-price">От</label>
-                        <input type="text" id="min-price" name="min-price" value="0">
+                        <input type="text" id="min-price" name="min-price" value="0" tabindex="18">
                         <label for="max-price">До</label>
-                        <input type="text" id="max-price" name="max-price" value="3000">
+                        <input type="text" id="max-price" name="max-price" value="3000" tabindex="19">
                     </p>
                     <div class="range-control">
                         <div class="scale">
@@ -86,7 +86,7 @@
                         <div class="range-toggle range-toggle-min"></div>
                         <div class="range-toggle range-toggle-max"></div>
                     </div>
-                    <button class="btn-form-filter" type="submit">Показать</button>
+                    <button class="btn-form-filter" type="submit" tabindex="20">Показать</button>
                 </div>
                 
             </form>        
@@ -100,14 +100,14 @@
             <div class="sorting-item-list">
                 <b>Сортировка</b>
                 <ul>                    
-                    <li><a href="#" class="sorting-result-active">По цене</a></li>
-                    <li><a href="#">По типу</a></li>
-                    <li><a href="#">По рейтингу</a></li>
+                    <li><a href="#" class="sorting-result-active" tabindex="21">По цене</a></li>
+                    <li><a href="#" tabindex="22">По типу</a></li>
+                    <li><a href="#" tabindex="23">По рейтингу</a></li>
                 </ul>
             </div>
             <ul class="sorting-item-element">
-                <li><a href="#" class="icon-up"></a></li>
-                <li><a href="#" class="icon-down"></a></li>
+                <li><a href="#" class="icon-up" tabindex="24"></a></li>
+                <li><a href="#" class="icon-down" tabindex="25"></a></li>
             </ul>
         </section>
         
@@ -117,14 +117,14 @@
                     <img src="img/description-picture-1.jpg" width="135" height="90" alt="Фото отеля">
                 </div>
                 <div class="hotel-content">
-                    <h1 class="hotel-title"><a href="#" >Amara Resort & Spa</a></h1>
+                    <h1 class="hotel-title" ><a href="#" tabindex="26">Amara Resort & Spa</a></h1>
                     <div class="hotel-description">
                         <span class="hotel-type">Гостиница</span>
-                        <a href="#" title="Узнать подробную информацию" class="hotel-btn btn-more">Подробнее</a>
+                        <a href="#" title="Узнать подробную информацию" class="hotel-btn btn-more" tabindex="27">Подробнее</a>
                     </div>
                     <div class="hotel-description">
                         <span class="hotel-price">от 4000 р.</span>
-                        <a href="#" title="Забранировать место" class="hotel-btn btn-bookin">Забранировать</a>
+                        <a href="#" title="Забранировать место" class="hotel-btn btn-bookin" tabindex="28">Забранировать</a>
                     </div> 
                 </div>
                 <div class="hotel-rating-stars">
@@ -143,14 +143,14 @@
                     <img src="img/description-picture-2.jpg" width="135" height="90" alt="Фото отеля">
                 </div>
                 <div class="hotel-content">
-                    <h1 class="hotel-title"><a href="#">Desert Quail Inn</a></h1>
+                    <h1 class="hotel-title" ><a href="#" tabindex="29">Desert Quail Inn</a></h1>
                     <div class="hotel-description">
                         <span class="hotel-type">Мотель</span>
-                        <a href="#" title="Узнать подробную информацию" class="hotel-btn btn-more">Подробнее</a>
+                        <a href="#" title="Узнать подробную информацию" class="hotel-btn btn-more" tabindex="30">Подробнее</a>
                     </div>
                     <div class="hotel-description">
                         <span class="hotel-price">от 3000 р.</span>
-                        <a href="#" title="Забранировать место" class="hotel-btn btn-bookin">Забранировать</a>
+                        <a href="#" title="Забранировать место" class="hotel-btn btn-bookin" tabindex="31">Забранировать</a>
                     </div> 
                 </div>
                 <div class="hotel-rating-stars">
@@ -168,14 +168,14 @@
                     <img src="img/description-picture-3.jpg" width="135" height="90" alt="Фото отеля">
                 </div>
                 <div class="hotel-content">
-                    <h1 class="hotel-title"><a href="#">Villas at Poco Diablo</a></h1>
+                    <h1 class="hotel-title" ><a href="#" tabindex="32">Villas at Poco Diablo</a></h1>
                     <div class="hotel-description">
                         <span class="hotel-type">Апартаменты</span>
-                        <a href="#" title="Узнать подробную информацию" class="hotel-btn btn-more">Подробнее</a>
+                        <a href="#" title="Узнать подробную информацию" class="hotel-btn btn-more" tabindex="33">Подробнее</a>
                     </div>
                     <div class="hotel-description">
                         <span class="hotel-price">от 2000 р.</span>
-                        <a href="#" title="Забранировать место" class="hotel-btn btn-bookin">Забранировать</a>
+                        <a href="#" title="Забранировать место" class="hotel-btn btn-bookin" tabindex="34">Забранировать</a>
                     </div> 
                 </div>
                 <div class="hotel-rating-stars">
@@ -191,17 +191,17 @@
         <footer class="page-footer">
              
              <div class="link-sedona">                 
-                 <a href="" title="" >#visitsedona</a>
+                 <a href="" title="" tabindex="35">#visitsedona</a>
              </div>
              
              <ul class="social-network">
-                 <li><a href="#" class="social-btn icon-twitter" title="Twitter">Twitter</a></li>
-				 <li><a href="#" class="social-btn icon-facebook" title="Facebook">Facebook</a></li>
-				 <li><a href="#" class="social-btn icon-youtube" title="Youtube">Youtube</a></li>                           
+                 <li><a href="#" class="social-btn icon-twitter" title="Twitter" tabindex="36">Twitter</a></li>
+				 <li><a href="#" class="social-btn icon-facebook" title="Facebook" tabindex="37">Facebook</a></li>
+				 <li><a href="#" class="social-btn icon-youtube" title="Youtube" tabindex="38">Youtube</a></li>                           
              </ul>
                             
              <div class="copyright">
-                 <a href="https://htmlacademy.ru/intensive/htmlcss" title="htmlacademy">website by</a>                            
+                 <a href="https://htmlacademy.ru/intensive/htmlcss" title="htmlacademy" tabindex="39">website by</a>                            
              </div>
              
         </footer>
