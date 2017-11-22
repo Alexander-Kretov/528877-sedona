@@ -94,6 +94,18 @@ body {
     color: rgba(0, 0, 0, 0.3);
 }
 
+.main-nav .active {
+    color: #766357; 
+}
+
+.main-nav .active:hover {
+    color: #766357; 
+}
+
+.main-nav .active:active {
+    color: #766357; 
+}
+
 .logo {
   position: absolute;
   left: 50%;
@@ -187,15 +199,14 @@ body {
     
 }
 
-.feature-row {
-    width: 100%;
+.feature-row {     
     display: flex;
     flex-direction: row;     
-    height: 256px; 
+    min-height: 256px; 
 }
 
 .feature-column  {     
-    width: 33.333%;
+    width: 33.333333%;
     padding-top: 48px;
     padding-right: 4%;
     padding-left: 4%;
@@ -211,7 +222,7 @@ body {
 }
 
 .feature-picture {
-    width: 66.666%;   
+    width: 66.666666%;   
     height: 256px;  
     
     overflow: hidden;
@@ -229,8 +240,7 @@ body {
 }
 
 .feature-list {     
-    height: 330px;
-    width: 100%;
+    min-height: 330px;     
     display: flex;
     flex-direction: row;
     
@@ -241,7 +251,7 @@ body {
 }
 
 .feature-list-item {    
-    width: 33.333%;      
+    width: 33.333333%;      
     padding-top: 162px;
     padding-left: 4%;
     padding-right: 4%;
@@ -785,7 +795,7 @@ input.hotel-form-select:focus:hover {
     justify-content: space-between;
     align-items: center;
     
-    border-bottom: 2px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .sorting-item-found {    
@@ -891,7 +901,7 @@ input.hotel-form-select:focus:hover {
     flex-direction: row;
     justify-content: space-between;
     
-    border-bottom: 2px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel-item img {
