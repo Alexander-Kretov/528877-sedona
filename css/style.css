@@ -336,7 +336,8 @@ body {
 }
 
 .feature-item { 
-    width: 33.333%;
+    width: 33.333333%;
+    min-height: 256px;
     padding-top: 48px;
     padding-left: 5%;
     padding-right: 5%;
@@ -567,7 +568,7 @@ form .btn-setting {
     padding: 0;
     width: 40px;
     height: 40px;  
-    
+     
     background: #f2f2f2;
     border: none;    
     cursor: pointer;
@@ -691,31 +692,39 @@ input.hotel-form-select:focus {
 
 
 
-.page-footer { 
-    height: 120px;
+.page-footer {
+    max-width: 100%;
     padding: 0;
     padding-top: 36px;
     padding-bottom: 36px;     
     display: -webkit-box;     
     display: -ms-flexbox;     
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
+     -webkit-box-orient: horizontal;
+     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
+     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
+     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; 
-    
+     
     text-align: center;
+    
     background: rgba(254, 254, 254, 0.8);    
     
-    -webkit-box-sizing: border-box;    
+     -webkit-box-sizing: border-box;    
     
             box-sizing: border-box;
+} 
+
+.page-footer::before {
+    content: "";
+    display: inline-block;
+    min-height: 10px;
+    visibility: hidden;
 }
 
 .index-footer {
@@ -727,7 +736,7 @@ input.hotel-form-select:focus {
 }
 
 .page-footer .link-sedona {
-    width: 33.333%;      
+    width: 33.333%;  
 }
 
 .link-sedona a {  
@@ -750,7 +759,6 @@ input.hotel-form-select:focus {
     padding: 0;
     margin: 0 auto;    
     width: 33.333%;  
-    
     list-style: none;
 }
 
@@ -788,7 +796,7 @@ input.hotel-form-select:focus {
 }
 
 .page-footer .copyright {    
-    width: 33.333%;     
+    width: 33.333%;  
     display: -webkit-box;     
     display: -ms-flexbox;     
     display: flex;
@@ -1276,6 +1284,14 @@ input.hotel-form-select:focus {
     
     font-size: 21px;
     line-height: 22px;
+}
+
+.hotel-title a:hover {
+    color: #81b3d2;
+}
+
+.hotel-title a:active {
+    color: #b2b2b2;
 }
 
 .hotel-content a {    
