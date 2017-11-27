@@ -720,13 +720,6 @@ input.hotel-form-select:focus {
             box-sizing: border-box;
 } 
 
-.page-footer::before {
-    content: "";
-    display: inline-block;
-    min-height: 10px;
-    visibility: hidden;
-}
-
 .index-footer {
     position: absolute;
     bottom: 0;
@@ -829,6 +822,7 @@ input.hotel-form-select:focus {
 
 .copyright svg {
     width:  113px;
+    height: 42px;
 }
 
 /* --------------- Footer-end ---------------- */
