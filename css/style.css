@@ -27,6 +27,11 @@ body {
         
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .wrapper {
     position: relative;
     
@@ -454,6 +459,8 @@ body {
     position: absolute;    
     top: 0;
     left: 50%;
+    
+    display: none;
     margin-left: -284px;
     width: 568px;
     padding: 55px;
@@ -470,6 +477,10 @@ body {
     -webkit-box-sizing: border-box;
     
             box-sizing: border-box;
+}
+
+.form-block {
+    display: block;
 }
 
 input.input-calendar[type="text"] { 
@@ -1268,7 +1279,7 @@ input.hotel-form-select:focus {
     margin: 0;
     margin-left: 30px;
     margin-right: auto;
-    max-width: 260px;
+    max-width: 720px;
 }
 
 .hotel-title {
