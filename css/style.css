@@ -34,7 +34,7 @@ body {
   margin: 0;
   padding: 0;
   color: #333333;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   background-color: #f2f2f2;
@@ -208,6 +208,7 @@ img {
   padding-top: 47px;
   padding-right: 50px;
   padding-left: 47px;
+  padding-bottom: 60px;       
   color: #ffffff;
   font-size: 14px;
   line-height: 21px;
@@ -261,6 +262,7 @@ img {
   padding-top: 162px;
   padding-left: 4%;
   padding-right: 4%;
+  padding-bottom: 60px;    
   font-size: 14px;
   line-height: 21px;
   -webkit-box-sizing: border-box;
@@ -299,6 +301,7 @@ img {
   padding-top: 48px;
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 60px;    
   text-align: center;
   line-height: 21px;
   background-color: #eeeeee;
@@ -325,7 +328,7 @@ img {
   color: #333333;
 }
 .hotel-search-wrap a {
-  width: 568px;
+  width: 518px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -334,7 +337,7 @@ img {
   justify-content: center;
   margin: 0 auto;
   margin-top: 47px;
-  padding: 30px 0;
+  padding: 30px 25px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -760,6 +763,23 @@ input.hotel-form-select:focus {
   height: 23px;
   background: url(../img/checkbox-off.svg) no-repeat;
 }
+
+.filter-form input[type="checkbox"]:disabled + label {
+    color: #6a6a6a;
+}
+
+.filter-form input[type="checkbox"]:disabled + label::before {
+  position: absolute;
+  z-index: 10;    
+  top: 0;
+  left: 0;
+  content: "";
+  margin-top: -2px;
+  width: 27px;
+  height: 23px;
+  background: url(../img/checkbox-off-disabled.svg) no-repeat;
+}
+
 .filter-form input[type="checkbox"]:checked + label::before {
   position: absolute;
   top: 0;
@@ -770,6 +790,18 @@ input.hotel-form-select:focus {
   height: 23px;
   background: url(../img/checkbox-on.svg) no-repeat;
 }
+
+.filter-form input[type="checkbox"]:disabled:checked + label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  margin-top: -2px;
+  width: 27px;
+  height: 23px;
+  background: url(../img/checkbox-on-disabled.svg) no-repeat;
+}
+
 .range-form-column {
   width: 318px;
   color: #ffffff;
