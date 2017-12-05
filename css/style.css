@@ -99,7 +99,7 @@ img {
 }
 .main-nav li:nth-child(3) {
   text-align: right;
-  padding-right: 30px;
+  padding-right: 32px;
 }
 .main-nav li:nth-child(4) {
   text-align: right;
@@ -207,7 +207,7 @@ img {
   width: 33.333333%;
   padding-top: 47px;
   padding-right: 50px;
-  padding-left: 45px;
+  padding-left: 47px;
   color: #ffffff;
   font-size: 14px;
   line-height: 21px;
@@ -232,12 +232,11 @@ img {
 .feature-row h2,
 .feature-list-item h2 {
   padding: 0;
-  padding-left: 5px;
   margin: 0 auto;
   margin-bottom: 24px;
 }
 .feature-row h2 {
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .feature-row:last-child h2 {
   padding-left: 5px;
@@ -274,7 +273,7 @@ img {
   content: "";
   position: absolute;
   top: 55px;
-  left: 198px;
+  left: 50%;
   margin-left: -35px;
 }
 .feature-icon-home::before {
@@ -289,8 +288,7 @@ img {
   height: 76px;
   background: url(../img/icon-3.svg) no-repeat;
 }
-.feature-icon-box::before {
-  left: 202px;
+.feature-icon-box::before {  
   width: 76px;
   height: 76px;
   background: url(../img/icon-2.svg) no-repeat;
@@ -316,12 +314,12 @@ img {
   margin: 0 auto;
   text-align: center;
   padding-top: 56px;
-  line-height: 21px;
+  line-height: 24px;
   background-color: #ffffff;
 }
 .hotel-search-wrap h2 {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 30px;
   font-size: 30px;
   font-weight: bold;
   color: #333333;
@@ -335,7 +333,7 @@ img {
   -ms-flex-pack: center;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 47px;
   padding: 30px 0;
   font-size: 21px;
   line-height: 26px;
@@ -423,6 +421,10 @@ input.input-calendar[type="text"] {
   align-items: center;
   text-align: left;
 }
+
+.hotel-from-row label {
+    margin-right: 10px;
+}
 .icon-calendar {
   position: absolute;
   left: 428px;
@@ -464,7 +466,7 @@ input.input-calendar[type="text"] {
   align-items: center;
 }
 .form-group-select label {
-  margin-right: 27px;
+  margin-right: 25px;
 }
 .form-group-select:first-child label {
   margin-right: 40px;
@@ -546,7 +548,7 @@ input.hotel-form-select:focus {
   display: -ms-flexbox;
   display: flex;
   margin-top: 54px;
-  padding: 18px 192px;
+  padding: 17px 192px;
   font-weight: bold;
   font-size: 21px;
   text-align: center;
@@ -597,7 +599,7 @@ input.hotel-form-select:focus {
   width: 100%;
 }
 .page-footer .link-sedona {
-  width: 33.333%;
+  width: 33.333333%;
 }
 .link-sedona a {
   text-decoration: none;
@@ -617,7 +619,7 @@ input.hotel-form-select:focus {
   align-items: center;
   padding: 0;
   margin: 0 auto;
-  width: 33.333%;
+  width: 33.333333%;
   list-style: none;
 }
 .social-network a {
@@ -648,7 +650,7 @@ input.hotel-form-select:focus {
   text-decoration: none;
 }
 .page-footer .copyright {
-  width: 33.333%;
+  width: 33.333333%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
