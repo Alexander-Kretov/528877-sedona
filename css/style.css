@@ -208,7 +208,7 @@ img {
   padding-top: 47px;
   padding-right: 50px;
   padding-left: 47px;
-  padding-bottom: 60px;       
+  padding-bottom: 60px;
   color: #ffffff;
   font-size: 14px;
   line-height: 21px;
@@ -262,7 +262,7 @@ img {
   padding-top: 162px;
   padding-left: 4%;
   padding-right: 4%;
-  padding-bottom: 60px;    
+  padding-bottom: 60px;
   font-size: 14px;
   line-height: 21px;
   -webkit-box-sizing: border-box;
@@ -290,7 +290,7 @@ img {
   height: 76px;
   background: url(../img/icon-3.svg) no-repeat;
 }
-.feature-icon-box::before {  
+.feature-icon-box::before {
   width: 76px;
   height: 76px;
   background: url(../img/icon-2.svg) no-repeat;
@@ -301,7 +301,7 @@ img {
   padding-top: 48px;
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 60px;    
+  padding-bottom: 60px;
   text-align: center;
   line-height: 21px;
   background-color: #eeeeee;
@@ -424,9 +424,8 @@ input.input-calendar[type="text"] {
   align-items: center;
   text-align: left;
 }
-
 .hotel-from-row label {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 .icon-calendar {
   position: absolute;
@@ -482,6 +481,10 @@ form .btn-setting {
   background: #f2f2f2;
   border: none;
   cursor: pointer;
+}
+form .btn-setting,
+form .btn-form-search {
+  border-radius: 0;
 }
 .btn-minus::before {
   position: absolute;
@@ -763,14 +766,8 @@ input.hotel-form-select:focus {
   height: 23px;
   background: url(../img/checkbox-off.svg) no-repeat;
 }
-
-.filter-form input[type="checkbox"]:disabled + label {
-    color: #6a6a6a;
-}
-
 .filter-form input[type="checkbox"]:disabled + label::before {
-  position: absolute;
-  z-index: 10;    
+  position: absolute;   
   top: 0;
   left: 0;
   content: "";
@@ -779,7 +776,6 @@ input.hotel-form-select:focus {
   height: 23px;
   background: url(../img/checkbox-off-disabled.svg) no-repeat;
 }
-
 .filter-form input[type="checkbox"]:checked + label::before {
   position: absolute;
   top: 0;
@@ -790,7 +786,6 @@ input.hotel-form-select:focus {
   height: 23px;
   background: url(../img/checkbox-on.svg) no-repeat;
 }
-
 .filter-form input[type="checkbox"]:disabled:checked + label::before {
   position: absolute;
   top: 0;
@@ -801,7 +796,6 @@ input.hotel-form-select:focus {
   height: 23px;
   background: url(../img/checkbox-on-disabled.svg) no-repeat;
 }
-
 .range-form-column {
   width: 318px;
   color: #ffffff;
